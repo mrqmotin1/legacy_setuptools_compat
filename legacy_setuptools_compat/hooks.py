@@ -1,0 +1,6 @@
+app_name = "legacy_setuptools_compat"
+app_title = "Legacy Setuptools Compat"
+app_publisher = "Mondaysys"
+app_description = "Bench-only: keeps setuptools<81 for Frappe releases that import pkg_resources. Do not install on sites."
+app_email = "ops@mondaysys.com"
+app_license = "mit"

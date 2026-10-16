@@ -1,0 +1,15 @@
+[project]
+name = "legacy_setuptools_compat"
+authors = [{ name = "Mondaysys", email = "ops@mondaysys.com" }]
+description = "Keeps setuptools below 81 on benches running Frappe releases that still import pkg_resources"
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = ["setuptools<81"]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=15.0.0,<16.0.0"
